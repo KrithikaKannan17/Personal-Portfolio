@@ -37,7 +37,7 @@ const About = () => {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm also actively involved in hackathons, coding competitions, and open-source development. 
-              I am currently seeking Fall 2025 internships in software engineering, data science, AI, or robotics—let's connect!
+              I am currently seeking Fall 2025 internships in software engineering, AI, or robotics—let's connect!
             </p>
           </motion.div>
 
@@ -60,12 +60,12 @@ const About = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Globe className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">LANGUAGES KNOWN</h3>
-              <p className="text-gray-600">C , C++ , Python , MySQL , JavaScript , HTML / CSS</p>
+              <p className="text-gray-600">C, C++, Python, MySQL, JavaScript, HTML/CSS</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Mic className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Developer Tools</h3>
-              <p className="text-gray-600">Git , VS Code , Visual Studio , QBasic , PyCharm</p>
+              <p className="text-gray-600">Git, VS Code, Visual Studio, QBasic, PyCharm</p>
             </div>
           </motion.div>
         </div>

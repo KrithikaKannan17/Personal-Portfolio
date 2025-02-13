@@ -49,7 +49,7 @@ const Contact = () => {
                   href="mailto:krithikakannan06@gmail.com"
                   className="text-gray-700 hover:text-primary transition-colors"
                 >
-                  GMAIL: krithikakannan06@gmail.com
+                  krithikakannan06@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-4">

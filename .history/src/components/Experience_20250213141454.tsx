@@ -84,7 +84,7 @@ const clubs = [
     type: 'club'
   },
   {
-    title: 'Debater',
+    title: 'Member',
     organization: 'University of Waterloo Debate Club',
     description: [
       'Engaged in competitive debating and critical thinking exercises.',

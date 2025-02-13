@@ -49,7 +49,7 @@ const Contact = () => {
                   href="mailto:krithikakannan06@gmail.com"
                   className="text-gray-700 hover:text-primary transition-colors"
                 >
-                  GMAIL: krithikakannan06@gmail.com
+                  krithikakannan06@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-4">
@@ -60,7 +60,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-primary transition-colors"
                 >
-                  LinkedIn 
+                  LinkedIn Profile
                 </a>
               </div>
               <div className="flex items-center gap-4">
@@ -71,7 +71,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-primary transition-colors"
                 >
-                  GitHub 
+                  GitHub Profile
                 </a>
               </div>
               <div className="flex items-center gap-4">
