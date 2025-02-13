@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --secondary: #1e40af;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-gray-50;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+.tech-bg {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nav-link {
+  @apply relative text-gray-700 hover:text-primary transition-colors;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.project-card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105;
+}
+
+.skill-icon {
+  @apply w-12 h-12 text-primary transition-all duration-300 hover:scale-110 hover:text-secondary;
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-8 border-l-2 border-primary last:border-l-0;
+}
+
+.timeline-dot {
+  @apply absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary;
+}
