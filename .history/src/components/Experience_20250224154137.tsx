@@ -56,7 +56,7 @@ const experiences: Experience[] = [
     organization: 'Zenith Toastmasters Club',
     description: [
       'Oversaw speech contests, club meetings, and leadership workshops.',
-      'Provided mentorship to enhance members\' public speaking and leadership skills.',
+      'Provided mentorship to enhance members' public speaking and leadership skills.',
       'Promoted collaborative and competitive spirit within the club.'
     ],
     type: 'work'
@@ -115,7 +115,7 @@ const clubs = [
 
 const Experience = () => {
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen py-20 bg-gradient-to-b from-purple-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -126,82 +126,6 @@ const Experience = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Experience</h1>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Work Experience Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="flex items-center mb-8">
-              <Briefcase className="w-6 h-6 text-primary mr-3" />
-              <h2 className="text-2xl font-semibold">Work Experience</h2>
-            </div>
-            <div className="space-y-8">
-              {experiences.map((exp, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="timeline-item"
-                >
-                  <div className="timeline-dot" />
-                  <div className="bg-white p-6 rounded-lg shadow-md ml-4">
-                    <h3 className="text-xl font-semibold text-gray-900">{exp.title}</h3>
-                    <p className="text-primary font-medium mb-2">{exp.organization}</p>
-                    <ul className="space-y-2">
-                      {exp.description.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <ChevronRight className="w-5 h-5 text-primary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-gray-600">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Clubs Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="flex items-center mb-8">
-              <Users className="w-6 h-6 text-primary mr-3" />
-              <h2 className="text-2xl font-semibold">Clubs & Activities</h2>
-            </div>
-            <div className="space-y-8">
-              {clubs.map((club, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="timeline-item"
-                >
-                  <div className="timeline-dot" />
-                  <div className="bg-white p-6 rounded-lg shadow-md ml-4">
-                    <h3 className="text-xl font-semibold text-gray-900">{club.title}</h3>
-                    <p className="text-primary font-medium mb-2">{club.organization}</p>
-                    <ul className="space-y-2">
-                      {club.description.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <ChevronRight className="w-5 h-5 text-primary mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-gray-600">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Youtube } from 'lucide-react';
+import { Github, Youtube, ExternalLink } from 'lucide-react';
 
 interface Project {
   title: string;
@@ -12,15 +13,8 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'DigiTag',
-    description: 'Promote safe and authentic buying of luxury products over the internet using blockchain technology to transfer ownerships of the expensive products directly using digital wallet to make process authentic, safe and personalised for you.' ,
-    link: 'https://github.com/KrithikaKannan17/DigiTag',
-    type: 'software',
-    technologies: ['JavaScript', 'React', 'Vite', 'ICP', 'Motoko']
-  },
-  {
     title: 'LOYALTICS',
-    description: 'To predict customer churn in the banking and insurance sectors by analyzing customer behavior and transactional data',
+    description: ' predict customer churn in the banking and insurance sectors by analyzing customer behavior and transactional data',
     link: 'https://github.com/KrithikaKannan17/LOYALTICS',
     type: 'software',
     technologies: ['Python', 'React', 'Vite', 'Tailwind CSS', 'Lucide React']
@@ -30,7 +24,7 @@ const projects: Project[] = [
     description: 'A web application designed to foster meaningful connections between teenagers and senior citizens enabling skill-sharing, mentorship, and companionship, creating an enriching intergenerational experience.',
     link: 'https://github.com/KrithikaKannan17/GenMate',
     type: 'software',
-    technologies: ['Python', 'Lucide React', 'Vite', 'Tailwind CSS', 'ESLint']
+    technologies: ['Python', 'Lucide React', 'Vite', 'Tailwind CSS', 'Lucide React']
   },
   {
     title: 'LOYALTICS',

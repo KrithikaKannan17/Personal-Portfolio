@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-black py-20">
+    <div className="min-h-screen py-20 bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/1600x900/?space,galaxy')" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6 bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-md">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-black bg-opacity-50 p-6 rounded-lg">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-white mb-1">Name</label>
                 <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" />

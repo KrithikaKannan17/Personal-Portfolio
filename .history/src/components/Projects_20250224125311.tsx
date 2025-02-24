@@ -1,5 +1,6 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Youtube } from 'lucide-react';
+import { Github, Youtube, ExternalLink } from 'lucide-react';
 
 interface Project {
   title: string;

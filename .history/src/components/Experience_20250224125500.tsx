@@ -1,5 +1,6 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Users, ChevronRight } from 'lucide-react';
+import { Briefcase, Users, Calendar, ChevronRight } from 'lucide-react';
 
 interface Experience {
   title: string;

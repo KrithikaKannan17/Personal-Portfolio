@@ -1,0 +1,4 @@
+[[redirects]]
+from= "/*"
+command = "npm run build"
+publish = "build"

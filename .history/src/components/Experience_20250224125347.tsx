@@ -1,5 +1,6 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Users, ChevronRight } from 'lucide-react';
+import { Briefcase, Users, Calendar, ChevronRight } from 'lucide-react';
 
 interface Experience {
   title: string;
@@ -11,14 +12,13 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: 'Social Media & Digital Content Coordinator',
-    organization: 'EmpowerED',
+    title: 'Marketing Coordinator',
+    organization: 'University of Waterloo Computer Science Club',
     description: [
-      'Develop engaging and visually compelling content to communicate EmpowerED’s mission, events, and initiatives.',
-      'Analyze social media insights to optimize engagement and foster a strong, connected community.',
-      'Capture high-quality photos for newsletters, website content, and social media to maintain a consistent visual identity.',
-      'Collaborate with web developers to implement UI/UX improvements, enhancing the user experience across digital platforms.'
-    ],    
+      'Spearheaded marketing efforts for club events, leveraging digital and on-campus promotional strategies.',
+      'Designed and executed targeted advertising campaigns to maximize event participation.',
+      'Collaborated with fellow coordinators to ensure effective outreach and engagement.'
+    ],
     type: 'work'
   },
   {
