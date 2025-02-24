@@ -21,8 +21,8 @@ const projects: Project[] = [
   },
   {
     title: 'GenMate',
-    description: 'A web application designed to foster meaningful connections between teenagers and senior citizens enabling skill-sharing, mentorship, and companionship, creating an enriching intergenerational experience.',
-    link: 'https://github.com/KrithikaKannan17/GenMate',
+    description: ' predict customer churn in the banking and insurance sectors by analyzing customer behavior and transactional data',
+    link: 'https://github.com/KrithikaKannan17/LOYALTICS',
     type: 'software',
     technologies: ['Python', 'React', 'Vite', 'Tailwind CSS', 'Lucide React']
   },

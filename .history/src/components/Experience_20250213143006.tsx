@@ -42,16 +42,6 @@ const experiences: Experience[] = [
     type: 'work'
   },
   {
-    title: 'President',
-    organization: 'Zenith Toastmasters Club',
-    description: [
-      'Oversaw speech contests, club meetings, and leadership workshops.',
-      'Provided mentorship to enhance members\' public speaking and leadership skills.',
-      'Promoted collaborative and competitive spirit within the club.'
-    ],
-    type: 'work'
-  },
-  {
     title: 'Vice President',
     organization: 'STEM NET',
     description: [
@@ -61,6 +51,16 @@ const experiences: Experience[] = [
     ],
     type: 'work'
   },
+  {
+    title: 'President',
+    organization: 'Zenith Toastmasters Club',
+    description: [
+      'Oversaw speech contests, club meetings, and leadership workshops.',
+      'Provided mentorship to enhance members\' public speaking and leadership skills.',
+      'Promoted collaborative and competitive spirit within the club.'
+    ],
+    type: 'work'
+  }
 ];
 
 const clubs = [
