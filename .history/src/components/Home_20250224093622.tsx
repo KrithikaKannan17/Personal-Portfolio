@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -18,7 +19,7 @@ const Home = () => {
             <img
               src={img}
               alt="Krithika Kannan"
-              className="w-100 h-100 object-cover rounded-full shadow-lg mx-auto md:mx-0"
+              className="w-100 h-60 object-cover rounded-full shadow-lg mx-auto md:mx-0"
             />
           </motion.div>
 
