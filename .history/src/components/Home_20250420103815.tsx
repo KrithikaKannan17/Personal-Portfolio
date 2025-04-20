@@ -23,7 +23,7 @@ const Home = () => {
           >
             <div className="w-80 h-80 rounded-full bg-white/10 backdrop-blur-md border-4 border-white/20 flex items-center justify-center overflow-hidden shadow-2xl">
               <img 
-                src="/Personal-Portfolio/profile.jpg"
+                src="/profile.jpg" 
                 alt="Krithika Kannan"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />

@@ -22,7 +22,7 @@ const projects: Project[] = [
   },
   {
     title: 'DigiTag',
-    description: 'Promote safe and authentic buying of luxury products over the internet using blockchain technology to transfer ownerships of the expensive products directly using digital wallet to make process authentic, safe and personalised for you.',
+    description: 'Promote safe and authentic buying of luxury products over the internet using blockchain technology to transfer ownerships of the expensive products directly using digital wallet to make process authentic, safe and personalised for you.' ,
     link: 'https://github.com/KrithikaKannan17/DigiTag',
     type: 'software',
     technologies: ['JavaScript', 'React', 'Vite', 'ICP', 'Motoko']
@@ -40,6 +40,13 @@ const projects: Project[] = [
     link: 'https://github.com/KrithikaKannan17/GenMate',
     type: 'software',
     technologies: ['Python', 'Lucide React', 'Vite', 'Tailwind CSS', 'ESLint']
+  },
+  {
+    title: 'LOYALTICS',
+    description: ' To predict customer churn in the banking and insurance sectors by analyzing customer behavior and transactional data',
+    link: 'https://github.com/KrithikaKannan17/LOYALTICS',
+    type: 'software',
+    technologies: ['Python', 'React', 'Vite', 'Tailwind CSS', 'Lucide React']
   },
   {
     title: 'WatSpot',
@@ -98,7 +105,7 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <Background variant="gradient">
+    <Background variant="dots">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -107,7 +114,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-white mb-4">My Projects</h1>
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto"></div>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -117,45 +124,45 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/20"
+              className="bg-white/10 backdrop-blur-md rounded-xl shadow-lg overflow-hidden border border-white/20"
             >
-              <h2 className="text-2xl font-semibold text-white mb-4">{project.title}</h2>
-              <p className="text-gray-200 mb-4">{project.description}</p>
-              
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies?.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="px-3 py-1 bg-purple-500/20 text-purple-200 rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex gap-4">
-                {project.link !== '#' && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-200 hover:text-purple-400 transition-colors"
-                  >
-                    <Github size={20} />
-                    <span>Code</span>
-                  </a>
-                )}
-                {project.videoLink && (
-                  <a
-                    href={project.videoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-200 hover:text-purple-400 transition-colors"
-                  >
-                    <Youtube size={20} />
-                    <span>Demo</span>
-                  </a>
-                )}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
+                <p className="text-gray-200 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies?.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2 py-1 bg-primary/20 text-primary rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-4">
+                  {project.link !== '#' && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-secondary transition-colors"
+                    >
+                      <Github size={20} />
+                      <span>Code</span>
+                    </a>
+                  )}
+                  {project.videoLink && (
+                    <a
+                      href={project.videoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-secondary transition-colors"
+                    >
+                      <Youtube size={20} />
+                      <span>Demo</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

@@ -52,36 +52,8 @@ const About = () => {
             <p className="text-gray-200 mb-4">
               With a strong foundation in both technical and soft skills, I excel at bridging the gap between complex technical concepts and practical applications. My experience in various leadership roles has honed my ability to communicate effectively and work collaboratively in diverse teams.
             </p>
-            <p className="text-gray-200 mb-4">
+            <p className="text-gray-200">
               When I'm not coding, you can find me engaging in public speaking, mentoring others, or exploring new technologies and their applications in solving real-world problems.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-white mb-4 mt-8">What Are My Hobbies?</h2>
-            <p className="text-gray-200 mb-4">
-              I'm a public speaking enthusiast through and through. As a 3x speech champion, President of Gavels Club, and speaker at international events like the Qatar Debate, I've used my voice to tell stories, spark thought and inspire change.
-            </p>
-            <p className="text-gray-200 mb-4">
-              Beyond the stage and the screen, I love event planning, debating, writing, and occasionally diving into a good book or spontaneous dance break. I've organized large-scale cultural programs, tech fests, and even podcast episodes through STEM NET, an initiative I help lead to support students in their academic journey.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-white mb-4 mt-8">What Do I Do in My Leisure Time?</h2>
-            <p className="text-gray-200 mb-4">
-              When I'm not buried in code or prepping for a presentation, you'll probably find me:
-            </p>
-            <ul className="list-disc list-inside text-gray-200 mb-4 ml-4">
-              <li>Journaling or writing reflective pieces</li>
-              <li>Catching up on public speaking videos for inspiration</li>
-              <li>Exploring new music (everything from lo-fi to Indian classical)</li>
-              <li>Volunteering or mentoring other students</li>
-              <li>Daydreaming about my next travel adventure — preferably somewhere scenic with good coffee!</li>
-            </ul>
-            <p className="text-gray-200 mb-4">
-              I value deep conversations, quiet moments, and finding joy in the little things.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-white mb-4 mt-8">What Are My Aspirations?</h2>
-            <p className="text-gray-200 mb-4">
-              I aspire to be more than just a data scientist — I want to be a builder of bridges: between people, perspectives, and possibilities. My dream is to work at the forefront of tech, where I can combine my passion for data science with my drive to make a meaningful impact on society.
             </p>
           </motion.div>
 

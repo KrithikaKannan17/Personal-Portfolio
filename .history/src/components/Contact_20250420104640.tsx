@@ -42,12 +42,6 @@ const Contact = () => {
       label: 'github.com/KrithikaKannan17'
     },
     {
-      name: 'Devpost',
-      icon: <Github className="w-6 h-6" />,
-      href: 'https://devpost.com/krithikakannan06?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav',
-      label: 'devpost.com/krithikakannan06'
-    },
-    {
       name: 'YouTube',
       icon: <Youtube className="w-6 h-6" />,
       href: 'https://www.youtube.com/@RoboRevolution24',

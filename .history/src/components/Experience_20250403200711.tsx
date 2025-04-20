@@ -12,20 +12,10 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: 'Financial Analysis and Innovation Intern',
-    organization: 'Qatar Financial Centre Regulatory Authority',
-    period: 'April 2025 - Present',
-    description: [
-      'Assisted in maintaining and enhancing core analytical platforms and data pipelines to support supervisory teams within the Supervision and Authorization division.',
-      'Contributed to AI-driven research initiatives by exploring machine learning applications and innovative SupTech solutions for regulatory supervision.'
-    ],
-    type: 'work'
-  },
-  {
     title: 'Social Media & Digital Content Coordinator',
     organization: 'EmpowerED',
     description: [
-      'Develop engaging and visually compelling content to communicate EmpowerED\'s mission, events, and initiatives.',
+      'Develop engaging and visually compelling content to communicate EmpowerED's mission, events, and initiatives.',
       'Analyze social media insights to optimize engagement and foster a strong, connected community.',
       'Capture high-quality photos for newsletters, website content, and social media to maintain a consistent visual identity.',
       'Collaborate with web developers to implement UI/UX improvements, enhancing the user experience across digital platforms.'
@@ -67,7 +57,7 @@ const experiences: Experience[] = [
     organization: 'Zenith Toastmasters Club',
     description: [
       'Oversaw speech contests, club meetings, and leadership workshops.',
-      'Provided mentorship to enhance members\' public speaking and leadership skills.',
+      'Provided mentorship to enhance members' public speaking and leadership skills.',
       'Promoted collaborative and competitive spirit within the club.'
     ],
     type: 'work'

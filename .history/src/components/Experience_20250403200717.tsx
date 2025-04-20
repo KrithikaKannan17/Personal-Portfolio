@@ -12,16 +12,6 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: 'Financial Analysis and Innovation Intern',
-    organization: 'Qatar Financial Centre Regulatory Authority',
-    period: 'April 2025 - Present',
-    description: [
-      'Assisted in maintaining and enhancing core analytical platforms and data pipelines to support supervisory teams within the Supervision and Authorization division.',
-      'Contributed to AI-driven research initiatives by exploring machine learning applications and innovative SupTech solutions for regulatory supervision.'
-    ],
-    type: 'work'
-  },
-  {
     title: 'Social Media & Digital Content Coordinator',
     organization: 'EmpowerED',
     description: [

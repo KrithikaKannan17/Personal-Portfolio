@@ -21,11 +21,11 @@ const Home = () => {
             }}
             className="flex justify-center"
           >
-            <div className="w-80 h-80 rounded-full bg-white/10 backdrop-blur-md border-4 border-white/20 flex items-center justify-center overflow-hidden shadow-2xl">
+            <div className="w-80 h-80 rounded-full bg-white/10 backdrop-blur-md border-4 border-white/20 flex items-center justify-center overflow-hidden">
               <img 
-                src="/Personal-Portfolio/profile.jpg"
+                src="/profile.jpg" 
                 alt="Krithika Kannan"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover"
               />
             </div>
           </motion.div>
@@ -41,7 +41,7 @@ const Home = () => {
             }}
           >
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+              className="text-4xl md:text-5xl font-bold text-white mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -65,7 +65,6 @@ const Home = () => {
               Hi, I'm Krithika Kannan - an Undergraduate student at the University of Waterloo.
               I'm doing an Honours in Computer Science with a minor in Entrepreneurship.
             </motion.p>
-
             <motion.div 
               className="flex gap-4 mb-8"
               initial={{ opacity: 0 }}
@@ -74,13 +73,13 @@ const Home = () => {
             >
               <Link
                 to="/about"
-                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
+                className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition-colors flex items-center gap-2"
               >
                 About Me <ArrowRight size={20} />
               </Link>
               <Link
                 to="/projects"
-                className="border-2 border-purple-500 text-purple-500 px-6 py-3 rounded-lg hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors"
               >
                 View Projects
               </Link>
@@ -95,7 +94,7 @@ const Home = () => {
                 href="https://github.com/KrithikaKannan17"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-200 hover:text-purple-400 transition-colors transform hover:scale-110"
+                className="text-gray-200 hover:text-primary transition-colors"
               >
                 <Github size={24} />
               </a>
@@ -103,13 +102,13 @@ const Home = () => {
                 href="https://www.linkedin.com/in/krithikakannan06/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-200 hover:text-purple-400 transition-colors transform hover:scale-110"
+                className="text-gray-200 hover:text-primary transition-colors"
               >
                 <Linkedin size={24} />
               </a>
               <a
                 href="mailto:krithikakannan06@gmail.com"
-                className="text-gray-200 hover:text-purple-400 transition-colors transform hover:scale-110"
+                className="text-gray-200 hover:text-primary transition-colors"
               >
                 <Mail size={24} />
               </a>
@@ -117,7 +116,7 @@ const Home = () => {
                 href="https://www.youtube.com/@RoboRevolution24"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-200 hover:text-purple-400 transition-colors transform hover:scale-110"
+                className="text-gray-200 hover:text-primary transition-colors"
               >
                 <Youtube size={24} />
               </a>

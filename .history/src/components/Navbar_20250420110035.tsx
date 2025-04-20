@@ -8,11 +8,11 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/', label: 'Home', icon: <Home size={20} /> },
-    { path: '/about', label: 'About', icon: <User size={20} /> },
-    { path: '/projects', label: 'Projects', icon: <Briefcase size={20} /> },
-    { path: '/experience', label: 'Experience', icon: <Briefcase size={20} /> },
-    { path: '/contact', label: 'Contact', icon: <Mail size={20} /> },
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/experience', label: 'Experience' },
+    { path: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -30,22 +30,47 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
-              >
-                {item.icon}
-                {item.label}
-              </Link>
-            ))}
+            <Link
+              to="/"
+              className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <Home size={20} />
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <User size={20} />
+              About
+            </Link>
+            <Link
+              to="/experience"
+              className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <Briefcase size={20} />
+              Experience
+            </Link>
+            <Link
+              to="/projects"
+              className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <Briefcase size={20} />
+              Projects
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <Mail size={20} />
+              Contact
+            </Link>
           </div>
           {/* Mobile Navigation Button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white"
+              className="text-gray-700 hover:text-primary"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -60,14 +85,13 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium flex items-center gap-2 ${
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${
                     location.pathname === item.path
-                      ? 'text-white bg-purple-500/20'
-                      : 'text-gray-300 hover:text-white hover:bg-purple-500/10'
+                      ? 'text-primary bg-blue-50'
+                      : 'text-gray-700 hover:text-primary hover:bg-blue-50'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.icon}
                   {item.label}
                 </Link>
               ))}
